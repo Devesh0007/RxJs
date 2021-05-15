@@ -5,20 +5,24 @@
     <div class="col-md-6">
       <strong>Example 1: Manual</strong>
       <hr>
-      <ul class="techList" [ngClass]="techStatus == 'completed'? 'completed':(techStatus =='error' ? 'error': '')">
-        <li *ngFor="let item of techList">
-          {{item}}
-        </li>
-      </ul>
+      <div class="scroll-box-size">
+        <ul class="techList" [ngClass]="techStatus == 'completed'? 'completed':(techStatus =='error' ? 'error': '')">
+          <li *ngFor="let item of techList">
+            {{item}}
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="col-md-6">
       <strong>Example 2: Custom Interval Observable</strong>
       <hr>
-      <ul class="techList" >
-        <li *ngFor="let item of techList2">
-          {{item}}
-        </li>
-      </ul>
+      <div class="scroll-box-size">
+        <ul class="techList" [ngClass]="techStatus2 == 'completed'? 'completed':(techStatus2 =='error' ? 'error': '')">
+          <li *ngFor="let item of techList2">
+            {{item}}
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <br>
@@ -28,14 +32,16 @@
       <strong>Example 3: Random Names</strong>
       <hr>
       <p class="bg-light py-2 px-3 border rounded">
-       <strong>Random Names</strong>
-        a, b, c, d, e
+        <strong>Random Names</strong>
+        Adam, Alex, Aaron, Ben, Carl, Dan, David, Edward, Fred, Frank, George, Hal, Hank, Ike, John, Jack, Joe, Larry, Monte, Matthew, Mark, Nathan, Otto, Paul, Peter, Roger, Steve, Thomas, Tim, Ty, Victor, Walter
       </p>
       <hr>
       <p>
-        Current Name: <strong class="text-success">Devesh</strong>
+        Current Name: <strong>{{name}}</strong>
       </p>
-      <span class="badge badge-success">Success</span>
-     </div>
+      <span class="badge" [ngClass]="nameStatus == 'completed'? 'badge-success':(nameStatus =='error' ? 'badge-danger': 'badge-primary')">
+        {{nameStatus == 'completed'? 'Success':(nameStatus =='error' ? 'Error': 'Running...')}}
+      </span>
+    </div>
   </div>
 </div>

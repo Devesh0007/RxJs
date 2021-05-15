@@ -28,3 +28,8 @@ ul.techList.completed li{
   border: 1px solid #28a745;
   background: #28a7450f;
 }
+
+.scroll-box-size{
+  height: 260px;
+  overflow-y: scroll;
+}

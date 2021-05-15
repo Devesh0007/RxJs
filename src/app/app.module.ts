@@ -10,6 +10,7 @@ import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/ofFrom/ofFrom.component';
 import { ToArrayComponent } from './observable/ToArray/ToArray.component';
 import { CustomComponent } from './observable/custom/custom.component';
+import { MapComponent } from './observable/map/map.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { CustomComponent } from './observable/custom/custom.component';
     IntervalComponent,
     OfFromComponent,
     ToArrayComponent,
-    CustomComponent
+    CustomComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

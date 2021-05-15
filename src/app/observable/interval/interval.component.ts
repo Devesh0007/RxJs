@@ -10,7 +10,7 @@ export class IntervalComponent implements OnInit {
 
   videoList: any =[];
   broadcastVideo;
-  videosubcription: Subscription;
+  videoSubscription: Subscription;
   constructor() { }
 
   ngOnInit() {
@@ -19,13 +19,13 @@ export class IntervalComponent implements OnInit {
   }
 
   startBroadcasting(){
-    this.videosubcription = this.broadcastVideo.subscribe(res => {
+    this.videoSubscription = this.broadcastVideo.subscribe(res => {
       this.videoList.push('Video '+ res);
     });
   }
 
   stopBroadcasting(){
-    this.videosubcription.unsubscribe();
+    this.videoSubscription.unsubscribe();
   }
 
   clearList(){
