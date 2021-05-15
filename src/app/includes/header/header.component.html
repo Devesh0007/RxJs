@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">RxJs</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" >
+        <a class="nav-link" [routerLink]="['/promise']" routerLinkActive="active">Promise</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Observables
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" [routerLink]="['/observable/FromEvent']" routerLinkActive="active">FromEvent</a>
+          <a class="dropdown-item" [routerLink]="['/observable/Interval']" routerLinkActive="active">Interval & Timer</a>
+          <a class="dropdown-item" [routerLink]="['/observable/OfFrom']" routerLinkActive="active">Of & From</a>
+          <a class="dropdown-item" [routerLink]="['/observable/ToArray']" routerLinkActive="active">ToArray</a>
+          <a class="dropdown-item" [routerLink]="['/observable/Custom']" routerLinkActive="active">Custom Observable</a>
+          <a class="dropdown-item" [routerLink]="['/observable/FromEvent']" routerLinkActive="active"></a>
+          <a class="dropdown-item" [routerLink]="['/observable/FromEvent']" routerLinkActive="active"></a>
+          <a class="dropdown-item" [routerLink]="['/observable/FromEvent']" routerLinkActive="active"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

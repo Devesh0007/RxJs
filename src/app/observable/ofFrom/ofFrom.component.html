@@ -1,0 +1,89 @@
+<div class="m-5">
+  <h2>Of and From</h2>
+  <br>
+  <strong>of Ex(1)</strong>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Of Example</div>
+        <div class="card-body">
+          <button #startBtn class="btn btn-primary btn-dark mr-3" (click)="startBroadcasting()">Start</button>
+
+          <button #stopBtn class="btn btn-primary btn-dark" (click)="clearList()">Clear</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Data: of("a", "b", "c")</div>
+        <div class="card-body">
+          <ul *ngFor="let item of dataList">
+            <li>
+              {{item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Data: of(&#123;"a", "b", "c"&#125;)</div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let item of dataList">
+              {{item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <strong>from Ex(1)</strong>
+  <hr>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">from Example</div>
+        <div class="card-body">
+          <button #startBtn class="btn btn-primary btn-dark mr-3" (click)="startFromBroadcasting()">Start</button>
+
+          <button #stopBtn class="btn btn-primary btn-dark" (click)="clearFromList()">Clear</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">Array to observable</div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let item of arrayList">
+              {{item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">Promise to observable</div>
+        <div class="card-body">
+          {{promiseVal}}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">String to observable</div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let item of stringList">
+              {{item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

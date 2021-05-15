@@ -1,0 +1,30 @@
+.margin-left-10{
+  margin-left: 10px;
+}
+
+ul.techList{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.techList li{
+background: #f8f8f8;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin-bottom: 10px;
+padding: 8px 13px;
+font-weight: 500;
+}
+
+ul.techList.error li{
+  color: #de1d1d;
+  border: 1px solid red;
+  background: #ff00000d;
+}
+
+ul.techList.completed li{
+  color: #28a745;
+  border: 1px solid #28a745;
+  background: #28a7450f;
+}

@@ -1,0 +1,41 @@
+<div class="m-5">
+  <h2>Custom Observable</h2>
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Example 1: Manual</strong>
+      <hr>
+      <ul class="techList" [ngClass]="techStatus == 'completed'? 'completed':(techStatus =='error' ? 'error': '')">
+        <li *ngFor="let item of techList">
+          {{item}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <strong>Example 2: Custom Interval Observable</strong>
+      <hr>
+      <ul class="techList" >
+        <li *ngFor="let item of techList2">
+          {{item}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <strong>Example 3: Random Names</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+       <strong>Random Names</strong>
+        a, b, c, d, e
+      </p>
+      <hr>
+      <p>
+        Current Name: <strong class="text-success">Devesh</strong>
+      </p>
+      <span class="badge badge-success">Success</span>
+     </div>
+  </div>
+</div>

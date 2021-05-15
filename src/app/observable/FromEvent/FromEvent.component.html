@@ -1,0 +1,26 @@
+<div class="m-5">
+  <h2>From Event</h2>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Add Video</div>
+        <div class="card-body">
+          <button #addVideoBtn class="btn btn-primary btn-dark">Add</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">List</div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let item of videoList">
+              {{item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
