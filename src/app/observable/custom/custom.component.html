@@ -5,7 +5,7 @@
     <div class="col-md-6">
       <strong>Example 1: Manual</strong>
       <hr>
-      <div class="scroll-box-size">
+      <div class="scroll-box-size-sm">
         <ul class="techList" [ngClass]="techStatus == 'completed'? 'completed':(techStatus =='error' ? 'error': '')">
           <li *ngFor="let item of techList">
             {{item}}
@@ -16,7 +16,7 @@
     <div class="col-md-6">
       <strong>Example 2: Custom Interval Observable</strong>
       <hr>
-      <div class="scroll-box-size">
+      <div class="scroll-box-size-sm">
         <ul class="techList" [ngClass]="techStatus2 == 'completed'? 'completed':(techStatus2 =='error' ? 'error': '')">
           <li *ngFor="let item of techList2">
             {{item}}

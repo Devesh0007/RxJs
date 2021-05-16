@@ -29,7 +29,26 @@ ul.techList.completed li{
   background: #28a7450f;
 }
 
-.scroll-box-size{
+.scroll-box-size-sm{
   height: 260px;
   overflow-y: scroll;
+}
+
+.scroll-box-size-md{
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.scroll-box-size-lg{
+  height: 260px;
+  overflow-y: scroll;
+}
+
+.custom-card-style{
+  height: 338px;
+}
+
+.custom-img-style{
+height: 200px;
+width: 100%;
 }

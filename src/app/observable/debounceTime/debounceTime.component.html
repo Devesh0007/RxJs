@@ -1,0 +1,27 @@
+<ngx-loading-bar></ngx-loading-bar>
+<div class="m-5">
+  <h2>DebounceTime & DistinctUntilChanged Operator</h2>
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Example 1: <span class="text-primary">DebounceTime</span></strong>
+      <br>
+      <hr>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Search</span>
+        <input type="text" #searchInput1 class="form-control" placeholder="Search..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <p *ngIf="requestedData != null">Requested Search Data: <strong class="text-success">{{requestedData}}</strong></p>
+    </div>
+    <div class="col-md-6">
+      <strong>Example 2: <span class="text-success">DistinctUntilChanged</span> </strong>
+      <br>
+      <hr>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Search</span>
+        <input type="text" #searchInput2 class="form-control" placeholder="Search..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <p *ngIf="requestedData2 != null">Requested Search Data: <strong class="text-success">{{requestedData2}}</strong></p>
+    </div>
+  </div>
+</div>

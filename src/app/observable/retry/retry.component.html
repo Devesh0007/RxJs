@@ -1,0 +1,28 @@
+<div class="m-5">
+  <h2>Retry, RetryWhen, Scan, and Delay Operator</h2>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <strong>Example</strong>
+      <br>
+      <hr>
+     <button class="btn btn-primary" (click)="getPhotos()">{{status == 'Fetching...'? 'Fetching...': 'Fetch Data'}}</button>
+     <br><br>
+     <p>Status:  <strong [ngClass]="status == 'Data fetched'?'text-success':status == 'Error while fetching data'? 'text-danger': ''">{{status}}</strong>
+     </p>
+      <hr>
+      <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="isDataFetched">
+        <div class="col col-md-2 mb-5" *ngFor="let item of photosList">
+          <div class="card custom-card-style">
+            <img src="{{item.thumbnailUrl}}" class="card-img-top custom-img-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.id}}</h5>
+              <p class="card-text">{{item.title}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
