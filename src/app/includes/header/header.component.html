@@ -26,8 +26,10 @@
           <a class="dropdown-item" [routerLink]="['/observable/Take']" routerLinkActive="active">Take</a>
           <a class="dropdown-item" [routerLink]="['/observable/Retry']" routerLinkActive="active">Retry</a>
           <a class="dropdown-item" [routerLink]="['/observable/DebounceTime']" routerLinkActive="active">DebounceTime</a>
+          <a class="dropdown-item" [routerLink]="['/observable/Subject']" routerLinkActive="active">Subject</a>
         </div>
       </li>
     </ul>
+    <strong *ngIf="isExclusive" class="badge badge-danger">Exclusive</strong>
   </div>
 </nav>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { IProvider  } from "../models/providerModel";
 import { IPost, IPhotos  } from "../models/sharedModel";
@@ -10,7 +10,11 @@ import { map } from 'rxjs/operators';
 })
 export class SharedService {
 
+  username = new BehaviorSubject<string>('Devesh');
+  isExclusive = new Subject<boolean>();
 constructor(private _http: HttpClient) { }
+
+
 
 loadJson(): Observable<IProvider[]> {
   const jsonFile = `../assets/json/provider.json`;

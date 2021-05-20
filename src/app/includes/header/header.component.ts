@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/appServices/shared.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public static readonly url: string ="http://localhost:4200";
-  constructor() { }
+  isExclusive: boolean = false;
+  constructor(private _sharedService: SharedService) {
+    this._sharedService.isExclusive.subscribe(res => this.isExclusive = res );
+   }
 
   ngOnInit() {
   }

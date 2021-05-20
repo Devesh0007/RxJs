@@ -1,4 +1,6 @@
+import { Comp1Component } from './components/comp1/comp1.component';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
@@ -19,6 +21,9 @@ import { TapComponent } from './observable/tap/tap.component';
 import { TakeComponent } from './observable/take/take.component';
 import { RetryComponent } from './observable/retry/retry.component';
 import { DebounceTimeComponent } from './observable/debounceTime/debounceTime.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { Comp2Component } from './components/comp2/comp2.component';
+import { Comp3Component } from './components/comp3/comp3.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,13 +41,18 @@ import { DebounceTimeComponent } from './observable/debounceTime/debounceTime.co
     TapComponent,
     TakeComponent,
     RetryComponent,
-    DebounceTimeComponent
+    DebounceTimeComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    LoadingBarModule
+    LoadingBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

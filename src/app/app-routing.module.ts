@@ -1,3 +1,7 @@
+import { Comp3Component } from './components/comp3/comp3.component';
+import { Comp2Component } from './components/comp2/comp2.component';
+import { Comp1Component } from './components/comp1/comp1.component';
+import { SubjectComponent } from './observable/subject/subject.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomComponent } from './observable/custom/custom.component';
@@ -33,6 +37,7 @@ const routes: Routes = [
       { path: "Take", component: TakeComponent },
       { path: "Retry", component: RetryComponent },
       { path: "DebounceTime", component: DebounceTimeComponent },
+      { path: "Subject", component: SubjectComponent },
     ]
   },
 
@@ -58,5 +63,9 @@ export const RoutingComponents = [
   TapComponent,
   TakeComponent,
   RetryComponent,
-  DebounceTimeComponent
+  DebounceTimeComponent,
+  SubjectComponent,
+  Comp1Component,
+  Comp2Component,
+  Comp3Component
 ];
